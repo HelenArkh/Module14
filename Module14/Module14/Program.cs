@@ -8,16 +8,20 @@ namespace Module14
     {
         static void Main(string[] args)
         {
-            var objects = new List<object>()
-           {
-               1,
-               "Сергей ",
-               "Андрей ",
-               300,
-           };
+            var numsList = new List<int[]>()
+{
+   new[] {2, 3, 7, 1},
+   new[] {45, 17, 88, 0},
+   new[] {23, 32, 44, -6},
+};
 
-            foreach (var stringObject in objects.Where(o => o is string).OrderBy(o => o))
-                Console.WriteLine(stringObject);
+            var orderedNums = numsList
+   .SelectMany(s => s) // выбираем элементы
+   .OrderBy(s => s); // сортируем
+
+            // выводим
+            foreach (var ord in orderedNums)
+                Console.WriteLine(ord);
         }
     }
 }
