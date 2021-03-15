@@ -1,0 +1,13 @@
+D:\VS_Projects\Module14\Module14\Module14\bin\Debug\netcoreapp3.1\Module14.exe
+D:\VS_Projects\Module14\Module14\Module14\bin\Debug\netcoreapp3.1\Module14.deps.json
+D:\VS_Projects\Module14\Module14\Module14\bin\Debug\netcoreapp3.1\Module14.runtimeconfig.json
+D:\VS_Projects\Module14\Module14\Module14\bin\Debug\netcoreapp3.1\Module14.runtimeconfig.dev.json
+D:\VS_Projects\Module14\Module14\Module14\bin\Debug\netcoreapp3.1\Module14.dll
+D:\VS_Projects\Module14\Module14\Module14\bin\Debug\netcoreapp3.1\Module14.pdb
+D:\VS_Projects\Module14\Module14\Module14\obj\Debug\netcoreapp3.1\Module14.csprojAssemblyReference.cache
+D:\VS_Projects\Module14\Module14\Module14\obj\Debug\netcoreapp3.1\Module14.AssemblyInfoInputs.cache
+D:\VS_Projects\Module14\Module14\Module14\obj\Debug\netcoreapp3.1\Module14.AssemblyInfo.cs
+D:\VS_Projects\Module14\Module14\Module14\obj\Debug\netcoreapp3.1\Module14.csproj.CoreCompileInputs.cache
+D:\VS_Projects\Module14\Module14\Module14\obj\Debug\netcoreapp3.1\Module14.dll
+D:\VS_Projects\Module14\Module14\Module14\obj\Debug\netcoreapp3.1\Module14.pdb
+D:\VS_Projects\Module14\Module14\Module14\obj\Debug\netcoreapp3.1\Module14.genruntimeconfig.cache
