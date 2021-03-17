@@ -8,49 +8,29 @@ namespace Module14
     {
         static void Main(string[] args)
         {
-            // создаём пустой список с типом данных Contact
-            var phoneBook = new List<Contact>();
+            // Список студентов
+            var students = new List<Student>
+{
+   new Student {Name="Алёна", Age=23, Languages = new List<string> {"английский", "немецкий" }},
+   new Student {Name="Яков", Age=23, Languages = new List<string> {"английский", "немецкий" }},
+   new Student {Name="Андрей", Age=23, Languages = new List<string> {"английский", "немецкий" }},
+   new Student {Name="Сергей", Age=27, Languages = new List<string> {"английский", "французский" }},
+   new Student {Name="Дмитрий", Age=29, Languages = new List<string> {"английский", "испанский" }},
+   new Student {Name="Василий", Age=24, Languages = new List<string> {"испанский", "немецкий" }}
+};
 
-            // добавляем контакты
-            phoneBook.Add(new Contact("Игорь", 79990000001, "igor@example.com"));
-            phoneBook.Add(new Contact("Сергей", 79990000010, "serge@example.com"));
-            phoneBook.Add(new Contact("Анатолий", 79990000011, "anatoly@example.com"));
-            phoneBook.Add(new Contact("Валерий", 79990000012, "valera@example.com"));
-            phoneBook.Add(new Contact("Сергей", 799900000013, "serg@example.com"));
-            phoneBook.Add(new Contact("Иннокентий", 799900000013, "innokentii@example.com"));
+            // Сортировка по имени и возрасту (убывание)
+            var sortedStudsDesc = students
+               .OrderByDescending(s => s.Name)
+               .ThenByDescending(s => s.Age);
 
-            while (true)
-            {
-                // Читаем введенный с консоли символ
-                var input = Console.ReadKey().KeyChar;
-
-                // проверяем, число ли это
-                var parsed = Int32.TryParse(input.ToString(), out int pageNumber);
-
-                // если не соответствует критериям - показываем ошибку
-                if (!parsed || pageNumber < 1 || pageNumber > 3)
-                {
-                    Console.WriteLine();
-                    Console.WriteLine("Страницы не существует");
-                }
-                // если соответствует - запускаем вывод
-                else
-                {
-                    // пропускаем нужное количество элементов и берем 2 для показа на странице
-                    var pageContent = phoneBook.Skip((pageNumber - 1) * 2).Take(2);
-                    Console.WriteLine();
-
-                    // выводим результат
-                    foreach (var entry in pageContent)
-                        Console.WriteLine(entry.Name + ": " + entry.PhoneNumber);
-
-                    Console.WriteLine();
-                }
-            }
-
-
-
-
+            foreach (var stud in sortedStudsDesc)
+                Console.WriteLine(stud.Name + ", " + stud.Age);
         }
+
+
+
+
+        
     }
 }
